@@ -37,35 +37,12 @@ export default function TipCalculator() {
         onChange={(event) => setPeople(parseInt(event.target.value))}
       />
       
-      <p>Total Tip: {isNaN(totalTip) ? "-" : `$${totalTip.toFixed(2)}`}</p>
-      <p>Tip Per Person: {isNaN(perPersonTip) ? "-" : `$${perPersonTip.toFixed(2)}`}</p>
+      <p>Total Tip: {isNaN(totalTip) ? "-" : `£${totalTip.toFixed(2)}`}</p>
+      <p>Tip Per Person: {isNaN(perPersonTip) ? "-" : `£${perPersonTip.toFixed(2)}`}</p>
 
       {/* Footer */}
       <footer>
-      This project was coded by{" "}
-          <a
-            href="https://github.com/mia-chou?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>Fang-Yi Chou</strong>
-          </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/mia-chou/react-weather-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>open-sourced on GitHub</strong>
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://react-weather-clima-app.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>hosted on Netlify</strong>
-          </a>
+      
       </footer>
     </div>
   );
